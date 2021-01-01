@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="lightsaber.css">
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/jpeg">
+</head>
+<body>
+    <h1>Jedi Lightsaber</h1>
+    <audio id="sw-theme" src="assets/sounds/theme.mp3"></audio>
+
+    <div class="weapon">
+        <img id="light" class="hide" src="assets/light.png">
+        <img id="hilt" height="150" src="assets/hilt.png" onclick="fire()">
+        <span>Luke Skywalker</span>
+    </div>
+
+    <audio id="saberOn" src="assets/sounds/SaberOn.mp3"></audio>
+    <audio id="saberOff" src="assets/sounds/SaberOff.mp3"></audio>
+    <audio id="saberHum" src="assets/sounds/Hum.mp3" loop></audio>
+
+    <script src="lightsaber.js"></script>
+</body>
+</html>
