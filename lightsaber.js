@@ -1,6 +1,8 @@
 console.log('may the force be with you, jedi!');
 
+var colors = ['red', 'green', 'blue'];
 var lightsaber = document.getElementById('light');
+var hilt = document.getElementById('hilt');
 
 var saberOn = document.getElementById('saberOn');
 var saberOff = document.getElementById('saberOff');
@@ -21,12 +23,17 @@ saberOff.onended = () => {
 
 fire = () => {
     lightsaber.classList.toggle('hide');
+    lightsaber.classList.toggle('show');
 
     if( lightsaber.classList.contains('hide') ) {
         saberHum.pause();
     }
     else {
         saberOn.play();
-        
     }
+}
+
+changeColor = () => {
+    let newColor = colors[parseInt(Math.random() * 3)];
+    lightsaber.setAttribute('src', `assets/${newColor}.png`)
 }

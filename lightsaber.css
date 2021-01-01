@@ -10,11 +10,12 @@
     font-weight: lighter;
     color: yellow;
     background-image: url('assets/bg.jpg');
-    transition: backgroundColor 0.05s ease-in-out;
+    transition: all 0.5s;
 }
 
 h1 {
     text-align: center;
+    font-size: 250%;
 }
 
 .weapon {
@@ -25,5 +26,19 @@ h1 {
 }
 
 .hide {
-    visibility: hidden;
+    opacity: 0;
 }
+
+.show {
+    opacity: 1;
+}
+
+.halo {
+    width:20px;
+    height:450px;
+    border:1px solid lightgreen; 
+    border-radius: 10px 10px 0px 0px;
+    background: green;
+    box-shadow:0 0 10px lightgreen;
+}
+
